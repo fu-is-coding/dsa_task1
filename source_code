@@ -122,8 +122,7 @@ double calculatePolynomialValue(struct Node* head, double x)
 * tham số vào gồm con trỏ ở cuối danh sách để đỡ phải duyệt
 * và con trỏ newEle trỏ tới phần tử mới được thêm
 */
-void addElementLast(struct Node** pHead, struct Node** pLast, struct Node* newEle)
-{
+void addElementLast(struct Node** pHead, struct Node** pLast, struct Node* newEle){
 	if (*pLast == NULL) { // danh sách đang rỗng
 		*pLast = newEle;
 		*pHead = newEle;
